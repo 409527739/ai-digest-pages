@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 日报 2026-11-11 23:30</title>
+<style>
+body{max-width:760px;margin:0 auto;padding:16px;font-family:-apple-system,"PingFang SC",sans-serif;color:#222;line-height:1.7}
+h1{font-size:1.4rem;border-bottom:2px solid #4a7dff;padding-bottom:8px}
+h2{font-size:1.1rem;color:#4a7dff;margin-top:28px}
+.item{margin:14px 0;padding:12px;border-radius:10px;background:#f7f8fa}
+.item .t{font-weight:600}.item .t a{color:#222;text-decoration:none}
+.item .s{font-size:.92rem;color:#555;margin-top:4px}.item .r{font-size:.85rem;color:#4a7dff;margin-top:4px}
+.meta{color:#999;font-size:.85rem}.badge{display:inline-block;background:#4a7dff;color:#fff;border-radius:6px;padding:1px 8px;font-size:.75rem;margin-right:6px}
+footer{margin-top:32px;color:#bbb;font-size:.8rem;text-align:center}
+</style></head><body>
+<h1>📡 AI 日报 2026-11-11 23:30</h1>
+<p class="meta">11-10 23:30 ~ 11-11 23:30 ｜ 共 14 条 ｜ <a href="index.html">历史日报</a></p>
+
+<h2>大模型 <span class="meta">(2)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.14051v1">KV Cache 能否跨模型更新复用？DeepSeek-V4-Flash 案例研究</a></div>
+  <div class="s">研究考察跨四次模型更新直接复用 KV Cache 的可行性，重点分析 DeepSeek-V4-Flash 到 Flash-0731。核心发现：缓存可保留有用任务信息，但无法忠实复现更新后模型的行为，检索准确率波动大，从接近原生水平到大幅下降不等。</div>
+  <div class="r">💡 涉及 DeepSeek 新版本与推理缓存复用，对降低长上下文计算成本有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/">Gemini 推出 Decisions API</a></div>
+  <div class="s">Google 为 Gemini 发布 Decisions API，面向开发者提供结构化的决策输出能力，可用于在应用与 Agent 中落地判断与选择逻辑。</div>
+  <div class="r">💡 Google 官方 API 新能力，对 Agent 与开发落地有直接价值。</div>
+</div>
+
+
+<h2>Skill与MCP <span class="meta">(3)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.14019v1">PASE：程序辅助的可补丁技能进化框架</a></div>
+  <div class="s">针对现有 Agent 技能以自然语言文档表示、程序逻辑与描述知识混杂难以维护的问题，提出 PASE 框架，将技能表示为可补丁的程序形式，并基于执行轨迹与下游反馈进行进化。</div>
+  <div class="r">💡 Agent 技能表示与自动进化新方法，与 Skills 生态直接相关。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://github.com/googleads/google-ads-mcp">Google 官方发布 Google Ads MCP 服务器</a></div>
+  <div class="s">Google 官方开源 google-ads-mcp，让 AI 助手通过 MCP 协议直接查询和管理 Google Ads 广告账户数据，可用于自动化投放分析与报表生成。</div>
+  <div class="r">💡 官方 MCP Server 生态扩充，广告场景可直接落地</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://news.ycombinator.com/item?id=50455811">Pomerado：把任意网站变成Agent可用的MCP</a></div>
+  <div class="s">YC F26 项目 Pomerado 在 Hacker News 发布，可将任意网站转换为供 Agent 调用的 MCP 服务，降低为现有网站接入 MCP 生态的门槛。</div>
+  <div class="r">💡 网站一键转MCP，直接扩展Agent可调用工具范围</div>
+</div>
+
+
+<h2>开发赋能 <span class="meta">(5)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.14009v1">编码 Agent 记忆后训练：用文件操作解锁长任务记忆</a></div>
+  <div class="s">研究提出利用预训练模型已有的文件读写能力作为记忆接口，通过 on-policy 蒸馏把记忆控制纳入策略，避免依赖模型未见过的新工具接口，从而提升编码 Agent 在长任务中的记忆管理效果。</div>
+  <div class="r">💡 长任务记忆是编码 Agent 落地关键，思路对开发提效有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.13960v1">从攻击面到防御架构：Agent 编码工具的组合式安全</a></div>
+  <div class="s">论文指出 AI 编码工具把模型与 shell、文件系统、网络打通后，会变成自动化的 LotL 攻击平台：注入指令即可让 bash、curl 等双用途命令成为载荷。作者主张安全应来自认知架构与权限组合的结构性设计，而非单模型能力，并批评正则黑名单与 LLM 裁判护栏各有缺陷。</div>
+  <div class="r">💡 为 Claude Code、Cursor 等编码 Agent 的权限与沙箱设计提供结构性安全视角。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://pietromiotti.com/latest/maya-site/?maya">谷歌48个AI智能体72小时发现未标记玛雅金字塔</a></div>
+  <div class="s">谷歌用48个SWE智能体处理NASA激光雷达数据，72小时内发现一座未被测绘的玛雅金字塔。展示了多智能体并行处理长任务、大规模数据分析的落地能力。</div>
+  <div class="r">💡 多智能体并行处理长任务的真实案例，对Agent落地有参考价值</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.14364v1">ARE-bench：在真实科研会话与工作区中评测Agent研究能力</a></div>
+  <div class="s">现有研究Agent基准多基于干净、自包含的独立任务，难以反映真实项目中的交付能力。ARE-bench 模拟持续进行的研究项目，工作区含未完成文件、过期版本与失败尝试，考察Agent能否在依赖历史会话决策的场景下推进项目。</div>
+  <div class="r">💡 Agent评测新基准，关注真实工作区与长任务连续性，对开发提效有参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://github.com/Alishahryar1/free-claude-code">free-claude-code：多工具多模型免费编码方案</a></div>
+  <div class="s">开源项目 free-claude-code 支持在终端、IDE、手机和浏览器中使用 Claude Code、Codex、OpenCode 等十余种编码工具，提供 13 亿以上免费 token，并支持多模型切换与语音。</div>
+  <div class="r">💡 为 Claude Code 等编码工具提供免费 token 与多模型接入，对开发提效有直接价值。</div>
+</div>
+
+
+<h2>Agent <span class="meta">(4)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.13946v1">TreeAgent：面向长层次化数据的结构感知记忆Agent</a></div>
+  <div class="s">针对现有记忆Agent将长输入切成扁平token片段、破坏结构化数据（如API响应、HTML）字段关系的问题，提出TreeAgent，按数据层次结构组织记忆，提升长文档与长对话的处理效果。</div>
+  <div class="r">💡 长任务与结构化数据处理是Agent落地的关键痛点，思路可借鉴。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.14492v1">ReTrace：将工具型Agent蒸馏为免规划器工作流</a></div>
+  <div class="s">ReTrace 把自然语言 SOP 和少量已记录的 Agent 运行轨迹，转化为可复用工作流：由代码而非 LLM 决定下一步，从而降低延迟与成本。它利用 Agent 每次工具调用时写下的推理说明来提取分支条件。</div>
+  <div class="r">💡 把重复性 Agent 任务固化为代码工作流，对落地降本有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.14356v1">EngineAgent：用Agent自动适配端侧LLM推理引擎</a></div>
+  <div class="s">EngineAgent 是一个面向端侧 LLM 推理引擎的 Agent 系统，将可复用的引擎与硬件知识同模型特定改动分离，自动完成模型转换、图构建、算子与硬件后端的跨层适配，并诊断主机-设备执行路径上的失败。</div>
+  <div class="r">💡 Agent 自动化改造推理栈，对开发赋能与端侧部署有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.14326v1">Agent何时该记忆？基于证伪门控的自我进化框架</a></div>
+  <div class="s">论文提出 FGSE 框架，将 Agent 从经验中提炼的教训表示为带前置条件和预期效果的结构化假设，用验证器做证伪门控，决定哪些经验可写入持久记忆，避免局部成功被误当作可复用知识。</div>
+  <div class="r">💡 直击 Agent 长期记忆写入时机这一落地痛点，思路可借鉴。</div>
+</div>
+
+
+<footer>由 ai-digest 自动生成</footer>
+</body></html>
