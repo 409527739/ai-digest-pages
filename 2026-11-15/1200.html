@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 日报 2026-11-15 12:00</title>
+<style>
+body{max-width:760px;margin:0 auto;padding:16px;font-family:-apple-system,"PingFang SC",sans-serif;color:#222;line-height:1.7}
+h1{font-size:1.4rem;border-bottom:2px solid #4a7dff;padding-bottom:8px}
+h2{font-size:1.1rem;color:#4a7dff;margin-top:28px}
+.item{margin:14px 0;padding:12px;border-radius:10px;background:#f7f8fa}
+.item .t{font-weight:600}.item .t a{color:#222;text-decoration:none}
+.item .s{font-size:.92rem;color:#555;margin-top:4px}.item .r{font-size:.85rem;color:#4a7dff;margin-top:4px}
+.meta{color:#999;font-size:.85rem}.badge{display:inline-block;background:#4a7dff;color:#fff;border-radius:6px;padding:1px 8px;font-size:.75rem;margin-right:6px}
+footer{margin-top:32px;color:#bbb;font-size:.8rem;text-align:center}
+</style></head><body>
+<h1>📡 AI 日报 2026-11-15 12:00</h1>
+<p class="meta">11-08 12:00 ~ 11-15 12:00 ｜ 共 16 条 ｜ <a href="index.html">历史日报</a></p>
+
+<h2>开发赋能 <span class="meta">(8)</span></h2>
+
+<div class="item">
+  <div class="t"><span class="badge">精选</span><a href="https://github.com/SWE-agent/mini-swe-agent">mini-swe-agent：百行代码解决 GitHub Issue，SWE-bench 得分超 74%</a></div>
+  <div class="s">SWE-agent 团队推出 mini-swe-agent，仅约 100 行代码即可自动解决 GitHub Issue 或辅助命令行操作，无需复杂配置和大型 monorepo，在 SWE-bench verified 上得分超过 74%。</div>
+  <div class="r">💡 极简架构却达高 SWE-bench 分数，对代码生成与自动化开发有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again">Claude Code「不再询问」功能致密码泄露至1122个公开GitHub文件</a></div>
+  <div class="s">Claude Code 的「Don&#39;t Ask Again」权限选项会让敏感凭据被写入明文配置，已有 1122 个公开 GitHub 文件因此暴露密码。使用该工具时需检查权限设置与提交内容。</div>
+  <div class="r">💡 Claude Code 用户需自查权限配置，避免凭据泄露</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://github.com/anthropics/claude-quickstarts">Anthropic 开源 Claude 快速上手项目集</a></div>
+  <div class="s">Anthropic 官方发布 claude-quickstarts 仓库，汇集多个可直接部署的示例项目，帮助开发者快速上手 Claude API 构建应用。</div>
+  <div class="r">💡 官方示例集，对用 Claude API 做开发落地有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.08947v1">Agent-Skill 工作流实现高效并行科学代码翻译</a></div>
+  <div class="s">论文提出 agent-skill 框架，将并行科学代码翻译拆分为翻译、编译诊断、执行验证三个自主 Agent，由裁决驱动的编排器调度，把每类失败路由到针对性修复技能而非盲目重试，并配自动输出校验。</div>
+  <div class="r">💡 多 Agent 分工+技能路由的代码翻译范式，对老项目改造与自动化修复有直接借鉴价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.08946v1">Flex-RSI：前沿 Agent 递归自我改进基准</a></div>
+  <div class="s">新基准 Flex-RSI 聚焦 Agent 的递归自我改进能力：不只评估最终答案，还考察 Agent 能否利用任务反馈改进自身的 harness（提示、工具、记忆与控制循环）。现有基准多固定 harness 只评结果，该工作填补了 Agent 自我优化评测的空白。</div>
+  <div class="r">💡 Agent 自我改进评测新方向，与开发赋能和 Agent 板块相关，值得关注。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.08933v1">DRAFT-Bench：评估前沿Agent的设计全流程能力</a></div>
+  <div class="s">新基准DRAFT-Bench从需求澄清、创意探索、受限编辑、迭代修改到交付物产出，评估通用Agent的完整设计生命周期能力。在35个设计简报、43种条件下对比Codex/Astra与Claude Code，提出Requirement-to-Artifact框架。</div>
+  <div class="r">💡 为Agent长任务与迭代修改能力提供新评测维度，对开发提效工具选型有参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.09825v1">BitDecoding-FP4：算法与系统协同的原生FP4 KV缓存解码</a></div>
+  <div class="s">针对长上下文LLM推理中KV缓存占用大、带宽瓶颈的问题，提出算法与系统协同设计的BitDecoding-FP4，兼顾FP4量化的精度与解码吞吐，实现原生FP4 KV缓存解码。</div>
+  <div class="r">💡 长上下文推理的KV缓存优化，对部署提效有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.09802v1">指令文件过时：编码Agent的文档债务与隐性成本</a></div>
+  <div class="s">研究指出 Claude Code 等编码 Agent 每次会话都会读取 AGENTS.md、CLAUDE.md 等指令文件，文件过时（如测试目录已迁移）会形成文档债务，持续增加后续会话成本，而仅看任务成功率的评测难以发现这一隐性开销。</div>
+  <div class="r">💡 提醒维护 Agent 指令文件，直接影响 Claude Code 等工具的实际使用效果。</div>
+</div>
+
+
+<h2>大模型 <span class="meta">(2)</span></h2>
+
+<div class="item">
+  <div class="t"><span class="badge">精选</span><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/">Gemini 4 Hydrogen 发布</a></div>
+  <div class="s">Google 发布 Gemini 4 Hydrogen，属于 Gemini 系列新版本。摘要信息有限，具体能力与参数尚未披露，需关注官方后续说明。</div>
+  <div class="r">💡 Google 大模型新版本发布，属用户核心关注方向</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://github.com/synchopate/llama-modchip">Llama-modchip：64GB 内存无 GPU 跑 284B DeepSeek</a></div>
+  <div class="s">开源项目 Llama-modchip 展示了在 64GB 内存、无 GPU 的机器上运行 284B 参数 DeepSeek 模型的方法，通过量化与内存优化实现本地推理。</div>
+  <div class="r">💡 大幅降低大模型本地部署门槛，对开发者有直接参考价值。</div>
+</div>
+
+
+<h2>Skill与MCP <span class="meta">(2)</span></h2>
+
+<div class="item">
+  <div class="t"><span class="badge">精选</span><a href="https://github.com/kajisho5/ffmpeg-skill">ffmpeg-skill：为编码 Agent 提供 42 个本地视频编辑工具</a></div>
+  <div class="s">开源项目 ffmpeg-skill 将 42 个 FFmpeg 工具封装为机器可读契约，并提供 MCP Server，可在 Claude Code、Cursor、Codex 中直接调用。支持剪辑、字幕、重构图、响度调整与平台导出，全程本地运行，无需云端或 API Key。</div>
+  <div class="r">💡 MCP 生态新项目，让编码 Agent 直接具备本地视频处理能力，可落地。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://github.com/bradautomates/claude-video">开源工具让 Claude 直接“看”视频</a></div>
+  <div class="s">claude-video 是一个开源工具，通过 /watch 命令下载视频、抽取关键帧并转写音频，再把多模态内容交给 Claude 分析。适合需要让 Claude 理解视频内容的开发者与创作者。</div>
+  <div class="r">💡 扩展 Claude 多模态能力，可落地到视频分析工作流</div>
+</div>
+
+
+<h2>Agent <span class="meta">(3)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.08865v1">工作流感知的Agent轨迹压缩框架WAAC</a></div>
+  <div class="s">针对长程Agent多步工具调用导致上下文膨胀的问题，提出工作流感知的轨迹压缩框架WAAC。它不再依赖文本重要性或固定截断，而是利用步骤间依赖关系保留后续任务所需的关键信息。</div>
+  <div class="r">💡 长任务上下文管理是Agent落地关键痛点，该思路对开发提效有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.09798v1">并行Agent团队让测试时计算扩展更高效</a></div>
+  <div class="s">研究提出并行Agent团队方法：并行采样多个小规模协作团队并保留最优团队结果，兼顾Best-of-N的并行性与大团队的协作优势。在GPU内核、形式化证明等12个长任务上验证，扩展效果优于两种基线。</div>
+  <div class="r">💡 多Agent协作与推理扩展的新思路，对长任务处理有直接参考价值</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.09721v1">MemoryDojo：追踪LLM Agent记忆投毒的基准</a></div>
+  <div class="s">MemoryDojo 是面向 LLM Agent 记忆系统的投毒基准，追踪恶意指令从写入、存储到跨会话检索执行的全生命周期，并量化不同记忆架构下的下游影响差异。</div>
+  <div class="r">💡 Agent 记忆安全是落地关键风险，基准可直接用于评估自建 Agent 记忆方案。</div>
+</div>
+
+
+<h2>本周综述 <span class="meta">(1)</span></h2>
+
+<div class="item">
+  <div class="t"><span>本周最值得关注的方向是编码 Agent 的工程化落地加速：mini-swe-agent 以约百行代码在 SWE-bench verified 上突破 74%，ffmpeg-skill、claude-video 等通过 MCP/Skill 契约把视频处理等专业能力直接接入 Claude Code、Cursor 等工具链，Anthropic 也开源了快速上手项目集，说明 Agent 正从演示走向可组合、可复用的开发基础设施。与此同时，Agent 能力评测开始从“看结果”转向“看过程与自我改进”：Flex-RSI 考察 Agent 利用反馈优化自身 harness 的能力，DRAFT-Bench 覆盖完整设计生命周期，WAAC 则针对长程工具调用的上下文膨胀提出工作流感知压缩，三者共同指向对 Agent 长期任务可靠性的系统化度量与优化。另一条主线是本地化与推理效率：Llama-modchip 在 64GB 无 GPU 机器上运行 284B 参数 DeepSeek，BitDecoding-FP4 以算法与系统协同实现原生 FP4 KV 缓存解码，显示大模型本地部署和长上下文推理的成本门槛正在被持续压低。需要警惕的是，Claude Code「不再询问」导致 1122 个公开 GitHub 文件泄露凭据，提醒 Agent 工具在追求自动化便利时必须同步强化权限与密钥安全设计。</span></div>
+  
+  
+</div>
+
+
+<footer>由 ai-digest 自动生成</footer>
+</body></html>
