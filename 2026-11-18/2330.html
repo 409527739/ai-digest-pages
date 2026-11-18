@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 日报 2026-11-18 23:30</title>
+<style>
+body{max-width:760px;margin:0 auto;padding:16px;font-family:-apple-system,"PingFang SC",sans-serif;color:#222;line-height:1.7}
+h1{font-size:1.4rem;border-bottom:2px solid #4a7dff;padding-bottom:8px}
+h2{font-size:1.1rem;color:#4a7dff;margin-top:28px}
+.item{margin:14px 0;padding:12px;border-radius:10px;background:#f7f8fa}
+.item .t{font-weight:600}.item .t a{color:#222;text-decoration:none}
+.item .s{font-size:.92rem;color:#555;margin-top:4px}.item .r{font-size:.85rem;color:#4a7dff;margin-top:4px}
+.meta{color:#999;font-size:.85rem}.badge{display:inline-block;background:#4a7dff;color:#fff;border-radius:6px;padding:1px 8px;font-size:.75rem;margin-right:6px}
+footer{margin-top:32px;color:#bbb;font-size:.8rem;text-align:center}
+</style></head><body>
+<h1>📡 AI 日报 2026-11-18 23:30</h1>
+<p class="meta">11-17 23:30 ~ 11-18 23:30 ｜ 共 12 条 ｜ <a href="index.html">历史日报</a></p>
+
+<h2>开发赋能 <span class="meta">(5)</span></h2>
+
+<div class="item">
+  <div class="t"><span class="badge">精选</span><a href="https://arxiv.org/abs/2611.23216v1">高分编码模型并未带来更多实际产出</a></div>
+  <div class="s">研究利用 2026 年 6 月 Claude Fable 5 被出口管制停用 19 天的窗口做自然实验：用户与项目不变、仅模型切换至 SWE-Bench Pro 低 11 分的 Opus 4.8，借此隔离基准分数与实际完成工作量的关系。</div>
+  <div class="r">💡 直接质疑 SWE-bench 分数与真实开发产出的相关性，影响选型判断</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/">哈佛研究：AI编程代理将瓶颈转向代码审查</a></div>
+  <div class="s">哈佛研究人员发现，AI 编程代理大幅提升了代码产出速度，但团队瓶颈已从写代码转移到代码审查环节，审查负担与质量把控成为新的效率制约。</div>
+  <div class="r">💡 揭示 AI 编程落地后的真实瓶颈，对团队提效与流程改造有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.22539v1">JET：面向仓库级问答的工具调用Agent适度探索微调</a></div>
+  <div class="s">论文发现仓库级问答中LLM Agent在信息已足够时仍持续调用工具，称为过度探索，且SFT会放大该问题。作者提出JET方法进行适度探索微调，以提升工具调用效率。</div>
+  <div class="r">💡 针对代码仓库问答Agent的工具调用效率优化，对开发提效有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.23138v1">RSI-Prime：训练模型去训练模型</a></div>
+  <div class="s">研究者构建 RSI-Prime 数据集，含 7 类任务、350 条完整实验轨迹，用于提升大模型自主开展训练实验的能力，为递归自我改进打基础。</div>
+  <div class="r">💡 让模型自主训练模型，是自动化研发与长任务处理的前沿方向。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.23045v1">ForecastGym：面向预测Agent的可控可回放基准</a></div>
+  <div class="s">ForecastGym 是一个实时、可控、可回放的预测 Agent 基准，通过固定检索证据来分离检索与推理能力，避免实时搜索与回溯搜索带来的信息泄漏，便于公平比较不同模型、搜索源与记忆策略。</div>
+  <div class="r">💡 为预测类 Agent 提供可控评测基准，对 Agent 评测与开发有直接参考价值。</div>
+</div>
+
+
+<h2>Skill与MCP <span class="meta">(2)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.22610v1">EvoSkill-S1：用遗传算子进化可复用技能</a></div>
+  <div class="s">EvoSkill-S1 提出以强化学习直接进化可复用技能本身，而非依赖 rollout 累积与启发式反思。它针对难负例失败，用修订、交叉修订、变异等五种遗传启发算子从父技能生成子技能，使技能库更新更可控。</div>
+  <div class="r">💡 技能库自动进化是 Agent 能力积累的关键方向，方法可落地。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.22525v1">Agent技能会过时：环境变化下的运行时行为与选择性维护</a></div>
+  <div class="s">研究对比了环境变化前后Agent技能复用效果，发现过时技能会使任务性能下降超10个百分点，或使执行成本增加近40%。论文提出需对技能状态进行选择性维护，而非全量复用。</div>
+  <div class="r">💡 揭示Agent技能复用的失效风险，对Skill设计与维护有直接参考价值。</div>
+</div>
+
+
+<h2>Agent <span class="meta">(4)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.22563v1">CADMAGEDDON：本地推理的高保真CAD重建开源Agent</a></div>
+  <div class="s">开源Agent CADMAGEDDON 可从网格重建可编辑CAD，将复杂任务拆解为一系列简单视觉决策，配合几何工具精确构建，支持单GPU与当代笔记本本地运行，适合处理不便外传的专有零件。</div>
+  <div class="r">💡 开源Agent+本地单GPU推理，对私有数据处理与开发落地有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.23219v1">LLM Agent 还需被教如何自我改进吗？</a></div>
+  <div class="s">论文研究一种自主范式：给定基本原语、资源和自我改进目标，让 Agent 自行构建基于上下文的自我学习算法，并以游戏为测试场景验证冻结 LLM Agent 的自主优化能力。</div>
+  <div class="r">💡 探讨 Agent 自主构建学习算法，对 Agent 框架与自动化方向有参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.23074v1">面向Agent治理的多准则自然语言运行时验证器</a></div>
+  <div class="s">提出VFM树注意力验证器，可并行评估N条自然语言准则，对Agent输出给出满足/违反/不适用三态判定。基于39.4万条CriteriaBank数据预训练，微调版VFM-4B在Agent治理场景实现高效运行时验证。</div>
+  <div class="r">💡 Agent治理与合规验证是可落地的工程方向，对构建可靠Agent系统有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.23068v1">分辨率假说：Agent进化的关键在于可靠识别改进</a></div>
+  <div class="s">论文提出“分辨率假说”：Agent自进化停滞并非因为无法提出更好的prompt、技能或记忆，而是噪声评估无法可靠识别改进。作者在7种进化方法、6个模型、超1000万次LLM调用上验证了这一假说。</div>
+  <div class="r">💡 揭示Agent自进化失效根因，对搭建自优化Agent与评估体系有直接启发。</div>
+</div>
+
+
+<h2>大模型 <span class="meta">(1)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://microsoft.ai/news/microsoft-ignite-2026/">微软AI发布七款新模型，主打可扩展性价比</a></div>
+  <div class="s">微软AI一次性发布七款新模型，强调在可扩展的价格性能比上具备竞争力。官方称这些模型覆盖多种能力场景，具体参数与基准尚未披露。</div>
+  <div class="r">💡 微软官方模型动态，可能影响模型选型与成本决策。</div>
+</div>
+
+
+<footer>由 ai-digest 自动生成</footer>
+</body></html>
