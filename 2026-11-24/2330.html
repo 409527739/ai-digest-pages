@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 日报 2026-11-24 23:30</title>
+<style>
+body{max-width:760px;margin:0 auto;padding:16px;font-family:-apple-system,"PingFang SC",sans-serif;color:#222;line-height:1.7}
+h1{font-size:1.4rem;border-bottom:2px solid #4a7dff;padding-bottom:8px}
+h2{font-size:1.1rem;color:#4a7dff;margin-top:28px}
+.item{margin:14px 0;padding:12px;border-radius:10px;background:#f7f8fa}
+.item .t{font-weight:600}.item .t a{color:#222;text-decoration:none}
+.item .s{font-size:.92rem;color:#555;margin-top:4px}.item .r{font-size:.85rem;color:#4a7dff;margin-top:4px}
+.meta{color:#999;font-size:.85rem}.badge{display:inline-block;background:#4a7dff;color:#fff;border-radius:6px;padding:1px 8px;font-size:.75rem;margin-right:6px}
+footer{margin-top:32px;color:#bbb;font-size:.8rem;text-align:center}
+</style></head><body>
+<h1>📡 AI 日报 2026-11-24 23:30</h1>
+<p class="meta">11-23 23:30 ~ 11-24 23:30 ｜ 共 9 条 ｜ <a href="index.html">历史日报</a></p>
+
+<h2>开发赋能 <span class="meta">(5)</span></h2>
+
+<div class="item">
+  <div class="t"><span class="badge">精选</span><a href="https://arxiv.org/abs/2611.30207v1">什么样的数据适合训练编码 Agent？SWE-Gym 系统性研究</a></div>
+  <div class="s">研究审计 SWE-Gym 训练数据的奖励标签正确性，发现 9B 基座模型从未解出的任务中 74% 存在测试误判（假阴性），而偶尔解出的任务仅 20%。作者修复或移除这些错误任务，为编码 Agent 的 RL 训练数据质量提供实证依据。</div>
+  <div class="r">💡 直接关系编码 Agent 训练数据质量与 SWE-bench 类评测，对开发提效有参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.29242v1">编码Agent的编辑依赖错配：传播遗漏与评测盲区</a></div>
+  <div class="s">研究编码Agent在迭代改码时仍依赖上下文中过时的依赖判断，导致后续推理出错、消费方缺陷未被原评测发现。基于DeepSWE、SWE-bench Verified与FeatureBench的真实执行轨迹分析该问题。</div>
+  <div class="r">💡 揭示编码Agent评测盲区，对SWE-bench类评测与Agent可靠性有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.29193v1">DFPO：面向AI编程智能体的直接反馈策略优化</a></div>
+  <div class="s">针对AI编程智能体多轮交互中奖励稀疏、中间决策难评估的问题，提出单轨迹强化学习算法DFPO，无需重复采样即可训练。在相同基座模型和执行环境下，任务解决率高于GSPO。</div>
+  <div class="r">💡 编程智能体训练新方法，直接提升代码任务解决率，对开发提效有参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.29162v1">外部检查反馈让更便宜的AI编码Agent修复规则违规</a></div>
+  <div class="s">研究让小型、中型、大型三种模型驱动的编码Agent在10个开源项目的25个PR上修复31个植入缺陷，对比有无CodeAssure商业检查器反馈及GitHub Copilot代码审查的效果。结果显示外部检查器提供位置和修复目标能帮助更便宜的模型更好地修复规则违规。</div>
+  <div class="r">💡 揭示外部检查反馈对低成本编码Agent修复规则违规的提升，对开发提效有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.30350v1">RepoClean：评测编码智能体的仓库级废弃代码清理能力</a></div>
+  <div class="s">提出 RepoClean 基准，包含来自 34 个热门 Python 开源仓库的 200 个清理任务，用于单独评测智能体识别并安全删除仓库级冗余/废弃代码的能力，填补该方向评测空白。</div>
+  <div class="r">💡 仓库级代码清理是新评测维度，对老项目改造与编码智能体落地有直接参考价值。</div>
+</div>
+
+
+<h2>Agent <span class="meta">(4)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.29238v1">GameAnything：从任意灵感生成可玩游戏世界</a></div>
+  <div class="s">GameAnything 是一个开源 Agent 平台，可将多模态灵感转化为现有游戏的可玩扩展。它结合编码 Agent、独立试玩评审与持久化开发状态，通过迭代开发完成游戏生成。</div>
+  <div class="r">💡 开源 Agent 平台，展示编码 Agent 在游戏开发中的落地玩法，值得关注。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.29062v1">HyperHarness：从用户历史生成个性化Agent Harness</a></div>
+  <div class="s">针对个性化LLM Agent中共享记忆流程难以适配、逐用户优化成本高的问题，提出HyperHarness框架，从用户历史中学习生成个性化Agent Harness，兼顾部署效率与个性化适配。</div>
+  <div class="r">💡 Agent记忆与个性化编排新方法，对构建可落地Agent有参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.30287v1">MMMem：具备任务感知多模态经验巩固的自改进 Agent</a></div>
+  <div class="s">MMMem 提出任务感知的多模态记忆框架，从已完成任务中提取并巩固经验，而非仅存储和检索对话、图像与文档记录，从而减少相关问题上的重复错误。</div>
+  <div class="r">💡 Agent 长期记忆与经验学习新框架，对构建可自改进 Agent 有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.30202v1">VADE：面向专业领域的可验证Agent数据引擎</a></div>
+  <div class="s">针对法律、金融等专业领域Agent任务难以验证、依赖专家标注的问题，提出VADE数据引擎，从专业来源构建可验证的Agent任务数据，用于训练与评测。</div>
+  <div class="r">💡 解决专业领域Agent训练数据瓶颈，对Agent落地有参考价值。</div>
+</div>
+
+
+<footer>由 ai-digest 自动生成</footer>
+</body></html>
