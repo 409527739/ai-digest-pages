@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 日报 2026-11-25 23:30</title>
+<style>
+body{max-width:760px;margin:0 auto;padding:16px;font-family:-apple-system,"PingFang SC",sans-serif;color:#222;line-height:1.7}
+h1{font-size:1.4rem;border-bottom:2px solid #4a7dff;padding-bottom:8px}
+h2{font-size:1.1rem;color:#4a7dff;margin-top:28px}
+.item{margin:14px 0;padding:12px;border-radius:10px;background:#f7f8fa}
+.item .t{font-weight:600}.item .t a{color:#222;text-decoration:none}
+.item .s{font-size:.92rem;color:#555;margin-top:4px}.item .r{font-size:.85rem;color:#4a7dff;margin-top:4px}
+.meta{color:#999;font-size:.85rem}.badge{display:inline-block;background:#4a7dff;color:#fff;border-radius:6px;padding:1px 8px;font-size:.75rem;margin-right:6px}
+footer{margin-top:32px;color:#bbb;font-size:.8rem;text-align:center}
+</style></head><body>
+<h1>📡 AI 日报 2026-11-25 23:30</h1>
+<p class="meta">11-24 23:30 ~ 11-25 23:30 ｜ 共 10 条 ｜ <a href="index.html">历史日报</a></p>
+
+<h2>开发赋能 <span class="meta">(4)</span></h2>
+
+<div class="item">
+  <div class="t"><span class="badge">精选</span><a href="https://arxiv.org/abs/2611.33098v1">Delegent：不牺牲性能的多Agent降本框架</a></div>
+  <div class="s">论文提出 Delegent，一个基于 Claude Code 的 Agent harness：前沿模型仍主导任务，但把查代码、跑测试、检索语料等简单子任务下放给本地小模型执行，从而在不牺牲性能的前提下大幅降低成本。</div>
+  <div class="r">💡 直接降低 Claude Code 类 Agent 使用成本，对开发提效有落地价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><span class="badge">精选</span><a href="https://arxiv.org/abs/2611.32946v1">ShellBench：日常任务中模型与Agent框架谁更关键</a></div>
+  <div class="s">新基准 ShellBench 基于超千万用户请求构建 100 个日常任务，在真实杂乱工作区中同时评估正确性与安全性。覆盖 12 个模型、5 种 Agent 框架、3 档推理强度，共 53,100 次 rollout，用于比较模型与 harness 对实际效果的影响。</div>
+  <div class="r">💡 直接回答模型与Agent框架哪个更影响落地效果，对选型有参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.33093v1">AIChipBench：评测 LLM Agent 自动设计 AI 加速器</a></div>
+  <div class="s">新基准 AIChipBench 要求 LLM 编码 Agent 用可综合 RTL 实现量化 Qwen3.5、Gemma 3/4、Llama 3.2 解码器，并对照可执行的整数参考模型逐步校验输出与状态。它揭示硬件设计中错误状态更新可能延迟数步才暴露，考察 Agent 的调试与正确性保障能力。</div>
+  <div class="r">💡 面向 Agent 硬件设计的新评测基准，拓展开发赋能边界，值得关注。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.32954v1">LoomKV：从GPU到SSD的无损KV缓存压缩</a></div>
+  <div class="s">LoomKV 提出面向 LLM 推理服务的无损 KV 缓存压缩方案，同时作用于外部存储层（DRAM/SSD）和 GPU 显存池，且无需修改推理引擎。通过按 head 校准的两级 3-bit 编码压缩 BF16 高位字节，在不改变输出结果的前提下提升前缀复用与长请求并发能力。</div>
+  <div class="r">💡 无损压缩 KV 缓存可提升长上下文与 Agent 场景的推理吞吐，对部署优化有直接参考价值。</div>
+</div>
+
+
+<h2>Agent <span class="meta">(3)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.33124v1">SAG-Mem：免构建的对话记忆框架</a></div>
+  <div class="s">SAG-Mem 提出一种对话记忆框架，将完整对话消息按不重叠分块保存，无需模型推理即可完成记忆构建，并在查询时通过词法扩展发现互补证据，解决跨会话中间证据检索难题。</div>
+  <div class="r">💡 Agent 长期记忆是落地关键，免构建方案对开发者有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.33005v1">Leto：以效用为中心的 Agent 记忆系统</a></div>
+  <div class="s">现有 Agent 记忆系统以对话保真度评估记忆，但高保真记忆未必能提升回复质量。Leto 将记忆视为预测问题，按对最终响应的效用决定记什么、取什么，为 Agent 记忆设计提供新思路。</div>
+  <div class="r">💡 Agent 记忆机制新研究，对构建长期任务 Agent 有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://github.com/HKUDS/CLI-Anything">HKUDS 推出 CLI-Anything：让所有软件原生支持 Agent</a></div>
+  <div class="s">HKUDS 发布 CLI-Anything 项目，目标是让所有软件具备 Agent 原生能力，并配套上线 CLI-Hub 平台（clianything.cc）。该项目探索通过 CLI 接口打通软件与 Agent 的协作链路。</div>
+  <div class="r">💡 让软件原生接入 Agent 的新思路，对 Agent 工具链与开发自动化有参考价值。</div>
+</div>
+
+
+<h2>大模型 <span class="meta">(2)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities">GPT-6 展现内在蛋白质设计能力</a></div>
+  <div class="s">GPT-6 通过推理与代码完成蛋白质结构与序列设计，实验室测试在五个靶点上观察到结合证据，显示大模型在科学设计任务上的新能力。</div>
+  <div class="r">💡 GPT-6 新能力落地科学设计，值得关注其推理与代码应用边界</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://bjin.github.io/go-codegolf-benchmark/#leaderboard">GPT-6.2 Astra 首次打破谷歌代码高尔夫纪录</a></div>
+  <div class="s">GPT-6.2 Astra 成为首个在代码高尔夫任务上超越谷歌工程师纪录的模型，展现出更强的代码精简与生成能力。该结果可作为衡量模型代码能力的新参考。</div>
+  <div class="r">💡 新模型在代码生成细分任务上创纪录，对关注代码能力与开发提效有参考价值。</div>
+</div>
+
+
+<h2>Skill与MCP <span class="meta">(1)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://chszlab.github.io/AgenticAlgorithmEngineering/">Show HN：用可证伪假设优化代码的 Agent Skill</a></div>
+  <div class="s">Hacker News 上有人发布了一个 Agent Skill，通过提出可证伪的假设来驱动代码优化，让每次改动都有可验证的依据。属于 Skill 生态中的新玩法，对代码生成与老项目改造有参考价值。</div>
+  <div class="r">💡 Skill 生态新玩法，可证伪假设驱动代码优化，对开发提效有直接参考。</div>
+</div>
+
+
+<footer>由 ai-digest 自动生成</footer>
+</body></html>
