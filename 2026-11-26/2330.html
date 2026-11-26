@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 日报 2026-11-26 23:30</title>
+<style>
+body{max-width:760px;margin:0 auto;padding:16px;font-family:-apple-system,"PingFang SC",sans-serif;color:#222;line-height:1.7}
+h1{font-size:1.4rem;border-bottom:2px solid #4a7dff;padding-bottom:8px}
+h2{font-size:1.1rem;color:#4a7dff;margin-top:28px}
+.item{margin:14px 0;padding:12px;border-radius:10px;background:#f7f8fa}
+.item .t{font-weight:600}.item .t a{color:#222;text-decoration:none}
+.item .s{font-size:.92rem;color:#555;margin-top:4px}.item .r{font-size:.85rem;color:#4a7dff;margin-top:4px}
+.meta{color:#999;font-size:.85rem}.badge{display:inline-block;background:#4a7dff;color:#fff;border-radius:6px;padding:1px 8px;font-size:.75rem;margin-right:6px}
+footer{margin-top:32px;color:#bbb;font-size:.8rem;text-align:center}
+</style></head><body>
+<h1>📡 AI 日报 2026-11-26 23:30</h1>
+<p class="meta">11-25 23:30 ~ 11-26 23:30 ｜ 共 6 条 ｜ <a href="index.html">历史日报</a></p>
+
+<h2>开发赋能 <span class="meta">(4)</span></h2>
+
+<div class="item">
+  <div class="t"><span class="badge">精选</span><a href="https://arxiv.org/abs/2611.34875v1">编码Agent为何过度编辑？实证研究揭示多余改动来源</a></div>
+  <div class="s">论文提出 Delta Residue Attribution 方法，回放 18 个前沿模型在 SWE-bench Verified 与 DeepSWE 上的 7660 条 GitHub Copilot CLI 轨迹，逐块追溯补丁来源并回滚重测，判定哪些编辑是多余的，从而量化编码 Agent 的过度编辑行为及其成因。</div>
+  <div class="r">💡 直接关系编码 Agent 的补丁质量与评测方法，对开发提效工具选型有参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.34142v1">为AI报告的Linux内核缺陷自动合成复现程序</a></div>
+  <div class="s">论文指出AI代码审查系统对Linux内核补丁生成的文本缺陷报告大量无人处理，主张以可运行的PoC作为关键信息，并研究如何自动合成复现程序，让维护者能直接验证缺陷是否可触发。</div>
+  <div class="r">💡 AI审查与自动化验证结合，对代码审查与测试提效有直接参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.34852v1">DRBench Pro：面向专业深度研究Agent的知识中心评测基准</a></div>
+  <div class="s">DRBench Pro 提出以结构化知识覆盖为核心评估目标的深度研究 Agent 基准。它从维基百科构建本地知识树，采样子图生成研究查询与有证据支撑的评分标准，弥补现有基准对研究方向覆盖度与深度评估的不足。</div>
+  <div class="r">💡 为深度研究 Agent 提供更细粒度的知识覆盖评测，对 Agent 能力评估有参考价值。</div>
+</div>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.34813v1">用代码解视觉：编码智能体视觉推理强于视频模型</a></div>
+  <div class="s">研究在相同输入与输出规范下，对比编码智能体与视频生成模型完成视觉推理任务的表现，发现编码智能体在视觉推理上更可靠，挑战了“视觉原生推理更优”的假设。</div>
+  <div class="r">💡 揭示编码智能体在视觉推理上的优势，对Agent与开发提效选型有参考价值。</div>
+</div>
+
+
+<h2>Agent <span class="meta">(1)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://arxiv.org/abs/2611.34147v1">让模型自主管理上下文：NVIDIA 的对比研究</a></div>
+  <div class="s">NVIDIA 在开源 Agent harness「nooa」中让模型通过 context API 自主决定何时压缩上下文，并与 harness 代管方案在文档研究和 ML 工程任务上对比（8K–512K token 预算）。有效使用该 API 的模型准确率更高。</div>
+  <div class="r">💡 上下文管理是 Agent 长任务的核心瓶颈，模型自主压缩思路对开发提效有直接参考价值。</div>
+</div>
+
+
+<h2>大模型 <span class="meta">(1)</span></h2>
+
+<div class="item">
+  <div class="t"><a href="https://twitter.com/thsottiaux/status/2125784147889393806">OpenAI 收紧 GPT-6.2 用量：Astra 限流快 40%，Sol 快 25%</a></div>
+  <div class="s">OpenAI 调整 GPT-6.2 系列用量限制，Astra 模型触发限流的速度比此前快 40%，Sol 快 25%。这意味着同等使用强度下更易触达配额上限，重度用户需重新评估调用策略。</div>
+  <div class="r">💡 OpenAI 官方配额变动，直接影响 API 与产品使用成本</div>
+</div>
+
+
+<footer>由 ai-digest 自动生成</footer>
+</body></html>
